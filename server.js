@@ -84,7 +84,7 @@ client.on("message", async message => {
     message.content.startsWith(`<@!${client.user.id}>`) ||
     message.content.startsWith(`<@${client.user.id}>`)
   ) {
-    return message.channel.send(`My prefix in this server is: \`${prefix}\``);
+    return message.channel.send(``);
   }
 
   if (!message.content.startsWith(prefix)) return;
@@ -153,9 +153,7 @@ client.on("message", async message => {
         .setTitle("Help Menu")
         .setColor("#19ce0e")
         .setThumbnail(client.user.displayAvatarURL())
-        .setDescription(
-          "Create a reaction role with the bot!\nThis bot is made by Cool dude 69#5158 with their ❤️!"
-        )
+        .setDescription("Create a reaction role with the krezy!")
         .addField(
           `Basic Commands`,
           `**r.help - Help Menu**
