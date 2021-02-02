@@ -156,11 +156,7 @@ client.on("message", async message => {
         .setDescription("Create a reaction role with the krezy!")
         .addField(
           `Basic Commands`,
-          `**R$help - Help Menu**
-
-           ★**${prefix}prefix - get the current prefix of this server.**
-
-           ★**${prefix}setprefix - set the current prefix of this server for reaction role only.**
+          `**R$help - HelpMenu **
 
            ★**${prefix}create [channel] [messageID] [emoji] [role] - create a reaction role.**
 
