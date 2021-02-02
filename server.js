@@ -68,7 +68,7 @@ client.on("message", async message => {
   let prefixes = JSON.parse(fs.readFileSync("./config/prefixes.json", "utf8"));
 
   if (!prefixes[message.guild.id]) {
-    prefixes[message.guild.id] = "r.";
+    prefixes[message.guild.id] = "R$";
     fs.writeFileSync(
       "./config/prefixes.json",
       JSON.stringify(prefixes, null, 4),
@@ -156,11 +156,11 @@ client.on("message", async message => {
         .setDescription("Create a reaction role with the krezy!")
         .addField(
           `Basic Commands`,
-          `**r.help - Help Menu**
+          `**R$help - Help Menu**
 
            ★**${prefix}prefix - get the current prefix of this server.**
 
-           ★**${prefix}setprefix - set the current prefix of this server.**
+           ★**${prefix}setprefix - set the current prefix of this server for reaction role only.**
 
            ★**${prefix}create [channel] [messageID] [emoji] [role] - create a reaction role.**
 
