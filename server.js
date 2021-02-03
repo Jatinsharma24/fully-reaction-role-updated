@@ -33,7 +33,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on("ready", async () => {
   console.log("Ready and start reacting!");
-  client.user.setActivity("$help ❤️", { type: "LISTENING" });
+  client.user.setActivity("$help 💓", { type: "LISTENING" });
 
   let reactions = JSON.parse(
     fs.readFileSync("./config/reactions.json", "utf8")
